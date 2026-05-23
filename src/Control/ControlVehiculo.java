@@ -4,10 +4,17 @@
  */
 package Control;
 
+import Entidades.Vehiculo;
 /**
  *
  * @author fabian lavalle
  */
 public class ControlVehiculo {
     
+    public Vehiculo crearVehiculo(String placa, String modelo, int puestos){
+      
+        
+       Vehiculo v = new Vehiculo(placa, modelo, puestos);
+               return v;
+    }
 }

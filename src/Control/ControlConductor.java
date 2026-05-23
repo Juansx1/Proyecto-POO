@@ -4,10 +4,18 @@
  */
 package Control;
 
+import Entidades.Conductor;
+import Entidades.Vehiculo;
+
 /**
  *
  * @author fabian lavalle
  */
 public class ControlConductor {
     
+     public Conductor crearConductor(int id, String nombre, Vehiculo v){
+      
+      Conductor c = new Conductor(id, nombre, v);
+      return c;
+    }
 }

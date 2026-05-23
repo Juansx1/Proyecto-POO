@@ -4,10 +4,16 @@
  */
 package Control;
 
+import Entidades.Conductor;
+import Entidades.Viaje;
 /**
  *
  * @author fabian lavalle
  */
 public class ControlViaje {
     
+    public Viaje crearViaje(String origen, String destino, String fecha, double costo, Conductor conductor){
+     Viaje v =new Viaje(origen, destino, fecha, costo, conductor);
+     return v;
+    }
 }

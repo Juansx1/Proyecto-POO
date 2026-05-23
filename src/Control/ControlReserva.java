@@ -4,10 +4,17 @@
  */
 package Control;
 
+import Entidades.Reserva;
+import Entidades.Viaje;
 /**
+ * 
  *
  * @author fabian lavalle
  */
 public class ControlReserva {
     
+    public Reserva crearReserva(Viaje viaje){
+      Reserva r =new Reserva(viaje);
+      return r;
+    }
 }

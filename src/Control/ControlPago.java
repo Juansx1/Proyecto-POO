@@ -4,10 +4,15 @@
  */
 package Control;
 
+import Entidades.Pago;
 /**
  *
  * @author fabian lavalle
  */
 public class ControlPago {
     
+    public Pago crearPago(){
+      Pago p =new Pago();
+      return p;
+    }
 }
