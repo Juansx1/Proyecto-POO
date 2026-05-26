@@ -33,10 +33,10 @@ public class DaoVehiculo {
         return true;
      }
      
-        public boolean borrar(Vehiculo ve) throws IOException, ClassNotFoundException{
+        public boolean borrar(String placa) throws IOException, ClassNotFoundException{
         List<Vehiculo> lista = listar();
         for (Vehiculo vei : lista) {
-            if(vei == ve){
+            if(vei.equals(placa)){
                 lista.remove(vei);
                 break;
             }

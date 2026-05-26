@@ -33,10 +33,10 @@ public class DaoPasajero {
         return true;
      }
      
-        public boolean borrar(Pasajero ve) throws IOException, ClassNotFoundException{
+        public boolean borrar(int id) throws IOException, ClassNotFoundException{
         List<Pasajero> lista = listar();
         for (Pasajero pa : lista) {
-            if(pa == ve){
+            if(pa.getId() == id){
                 lista.remove(pa);
                 break;
             }

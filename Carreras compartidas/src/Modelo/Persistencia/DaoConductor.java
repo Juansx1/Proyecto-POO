@@ -33,10 +33,10 @@ public class DaoConductor {
         return true;
      }
      
-        public boolean borrar(Conductor ve) throws IOException, ClassNotFoundException{
+        public boolean borrar(int id) throws IOException, ClassNotFoundException{
         List<Conductor> lista = listar();
         for (Conductor vei : lista) {
-            if(vei == ve){
+            if(vei.getId() == id){
                 lista.remove(vei);
                 break;
             }
