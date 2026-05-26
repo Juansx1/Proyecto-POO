@@ -4,6 +4,7 @@
  */
 package Control;
 
+import Entidades.Pasajero;
 import Entidades.Reserva;
 import Entidades.Viaje;
 /**
@@ -13,8 +14,8 @@ import Entidades.Viaje;
  */
 public class ControlReserva {
     
-    public Reserva crearReserva(Viaje viaje){
-      Reserva r =new Reserva(viaje);
+    public Reserva crearReserva(Viaje viaje,Pasajero pas){
+      Reserva r =new Reserva(viaje,pas);
       return r;
     }
 }
